@@ -1,0 +1,213 @@
+
+/* Geral */
+
+body{
+    color: #fff;
+    background-color: #000;
+}
+
+.titleContainer, .formContainer form input[name="submit"] {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.formContainer  {
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+}
+
+form input {
+    color: #fff;
+}
+
+.formContainer form input:focus {
+    outline: none;
+}
+
+.formContainer form input[type]:invalid {
+    border: 1px solid rgba(255, 0, 0, 0.7);
+}
+
+.moreInfo {
+    color: rgb(0, 50, 249);
+}
+
+/* Geral */
+
+@media screen and (max-width: 480px) {
+
+    nav figure img{
+        width: 20%;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titleContainer {
+        font-size: 1.4em;
+        padding: 5px 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+
+    .formContainer form{
+        margin: 0 auto;
+        padding: 5px 15px;
+    }
+
+    .formContainer form input:not(:last-child) {
+        width: 100%;
+        margin: 2% 0;
+        height: 60px;
+        border: none;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #333333;
+    }
+
+    .formContainer form input[name="submit"]{
+        padding: 0;
+        margin-top: 30px;
+        color: #fff;
+        background-color: #E80024;
+        font-size: 1.6em;
+    }
+
+    form input:last-child {
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        transform: scale(1.2);
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 0 5px;
+        color: #ADB3A3;
+    }
+
+    .registerContainer {
+        color: #ADB3A3;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 0 30px;
+    }
+
+    .registerContainer p a:first-child {
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+    .registerContainer p:last-child {
+        margin-top: 5%;
+    }
+
+    .captcha {
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 481px) {
+
+    body {
+        background-image: url('../img/background-image.jpg');
+    }
+
+    nav figure img {
+        width: 20%;
+        padding: 15px;
+    }
+
+    main {
+        display: flex;
+        width: 450px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .titleContainer {
+        font-size: 1.2em;
+        padding: 30px 15.5% 5px 15.5%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+
+    .formContainer form{
+        margin: 0 auto;
+        padding: 5px 25px;
+    }
+
+    .formContainer .form .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .formContainer form input:not(:last-child) {
+        width: 75%;
+        margin: 5px 5%;
+        height: 60px;
+        border: none;
+        padding: 20px 20px;
+        border-radius: 5px;
+        background-color: #333333;
+    }
+
+    .formContainer form input[name="submit"]{
+        padding: 0;
+        margin-top: 20px;
+        color: #fff;
+        background-color: #E80024;
+        font-size: 1.3em;
+    }
+
+    .formContainer form input:last-child{
+        padding: 0;
+        margin: 0 5px 0 15.5%;       
+    }
+
+    .box {
+        display: flex;
+        padding: 1% 15% 0 7%;
+        justify-content: space-between;
+        white-space: nowrap;
+        font-size: 13px;
+        color: #ADB3A3;
+    }
+    
+    .box, .registerContainer {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .registerContainer{
+        margin-bottom: 30%;
+        color: #ADB3A3;
+        font-size: 15px;
+    }
+
+    .registerContainer p:first-child{
+        padding: 10px 17.5%;
+    }
+
+    .registerContainer p:last-child{
+        padding: 0 10% 0 17.5%;
+    }
+    
+    .registerContainer p:first-child a {
+        color: #fff;
+        font-size: 1.1em;
+    }
+}
+
+
+
