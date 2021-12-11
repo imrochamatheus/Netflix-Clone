@@ -132,7 +132,9 @@ form input {
         color: #ADB3A3;
     }
 
-    .box div p {
+    .box div p:first-child {
+        display: flex;
+        align-items: center;
         padding: 10px;
     }
 
