@@ -66,6 +66,14 @@ form input {
     border: 1px solid rgba(255, 0, 0, 0.7);
 }
 
+.box, .registerContainer{
+    color: #ADB3A3;
+}
+
+.registerContainer p:first-child a {
+    color: #fff;
+}
+
 .moreInfo {
     color: rgb(0, 50, 249);
 }
@@ -95,7 +103,6 @@ form input {
     }
 
     .formContainer form{
-        margin: 0 auto;
         padding: 5px 15px;
     }
 
@@ -111,41 +118,35 @@ form input {
 
     .formContainer form input[name="submit"]{
         padding: 0;
-        margin-top: 30px;
-        color: #fff;
-        background-color: #E80024;
         font-size: 1.6em;
+        margin-top: 30px;
+        background-color: #E80024;
     }
 
     form input:last-child {
-        margin: 10px;
-        border: none;
-        border-radius: 5px;
+        margin: 10px 10px 10px 0;
     }
 
     .box {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         margin-bottom: 15px;
+        justify-content: space-between;
         font-family: 'Source Sans Pro', sans-serif;
-        color: #ADB3A3;
     }
 
-    .box div p:first-child {
+    .box div:first-child {
         display: flex;
         align-items: center;
-        padding: 10px;
+        justify-content: center;
     }
 
     .registerContainer {
-        color: #ADB3A3;
         font-family: 'Source Sans Pro', sans-serif;
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     .registerContainer p a:first-child {
-        color: #fff;
         font-size: 1.2em;
     }
 
@@ -161,10 +162,10 @@ form input {
 @media screen and (min-width: 481px) {
 
     body {
-        background-image: url('../img/background-image.jpg');
         display:flex;
         height: 100vh;
         align-items: center;
+        background-image: url('../img/background-image.jpg');
     }
 
     nav figure img {
@@ -175,19 +176,19 @@ form input {
     }
 
     main {
-        display: flex;
         width: 450px;
+        display: flex;
         flex-wrap: wrap;
         margin: 50% auto;
         background-color: rgba(0, 0, 0, 0.6);
     }
 
     .titleContainer {
-        font-size: 1.2em;
-        padding: 30px 15.5% 5px 15.5%;
         margin-top: 20px;
+        font-size: 1.2em;
         margin-bottom: 10px;
         align-self: flex-start;
+        padding: 30px 15.5% 5px 15.5%;
     }
 
     .formContainer form{
@@ -221,17 +222,16 @@ form input {
 
     .formContainer form input:last-child{
         padding: 0;
-        margin: 0 5px 0 15.5%;       
+        margin: 0 5px 0 17.5%;       
     }
 
     .box {
         display: flex;
-        padding: 1% 15% 0 7%;
-        justify-content: space-between;
-        white-space: nowrap;
         font-size: 13px;
+        white-space: nowrap;
+        padding: 1% 15% 0 7%;
         align-content: center;
-        color: #ADB3A3;
+        justify-content: space-between;
     }
     
     .box, .registerContainer {
@@ -240,7 +240,6 @@ form input {
     
     .registerContainer{
         margin-bottom: 30%;
-        color: #ADB3A3;
         font-size: 15px;
     }
 
@@ -253,7 +252,6 @@ form input {
     }
     
     .registerContainer p:first-child a {
-        color: #fff;
         font-size: 1.1em;
     }
 }
